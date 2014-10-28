@@ -1,0 +1,26 @@
+\documentclass{jsarticle}
+
+\usepackage{bm}
+
+\begin{document}
+
+
+\section{復習}
+
+\begin{eqnarray}
+  p(\bm{w}, \mathcal{D})  & = & p(\mathcal{D})p(\bm{w}|\mathcal{D}) = p(\bm{w})p(\mathcal{D}|\bm{w}) \\
+  p(\bm{w}|\mathcal{D}) & = & \frac{p(\mathcal{D}|\bm{w})p(\bm{w})}{p(\mathcal{D})} \\
+\end{eqnarray}
+
+\section{1.2.6 ベイズ曲線フィッティング}
+
+\begin{eqnarray}
+p(\bm{w}|\mbox{\bf x,t}, \alpha,\beta) & = & \frac{p(\mbox{\bf t} | \mbox{\bf x},\bm{w},\beta) p(\bm{w}|\alpha)}{p(\mbox{\bf t}|\mbox{\bf x}, \alpha, \beta)} \\
+  p(\bm{w}|\mbox{\bf x,t}, \alpha,\beta) & \propto & p(\mbox{\bf t} | \mbox{\bf x},\bm{w},\beta) p(\bm{w}|\alpha) 
+\end{eqnarray}
+上記は、最大事後確率(MAP; maximum a posteriori)となるが、最大となる{\bf w}の点を推定しているだけ。
+
+
+\end{document}
+
+
